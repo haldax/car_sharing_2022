@@ -1,4 +1,23 @@
+/*** Element selctor ****/
 h1 {
-    color: green;
+    color: #8FD14F;
     font-family: Tahoma, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 50pt;
+}
+
+/*** Class selctor ****/
+.green_button {
+    border-radius: 5%;
+    border:white;
+    background-color: #8FD14F;
+    color: white;
+    font-size: large;
+}
+
+/*** ID selctor ****/
+#signIn {
+    border-style: none;
+    background-color: white;
+    font-size: large;
 }
