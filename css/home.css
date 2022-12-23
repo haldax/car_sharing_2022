@@ -1,9 +1,9 @@
 /*** Element selctor ****/
 h1 {
-    color: #8FD14F;
-    font-family: Tahoma, Verdana, sans-serif;
+    color: #144272;
+    font-family: sans-serif, Tahoma, Verdana;
     font-style: italic;
-    font-size: 50pt;
+
 }
 
 /*** Class selctor ****/
@@ -20,4 +20,7 @@ h1 {
     border-style: none;
     background-color: white;
     font-size: large;
+}
+#totoro {
+    border-radius: 100%;
 }
