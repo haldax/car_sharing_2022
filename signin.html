@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +9,31 @@
         <link rel="stylesheet" href="css/home.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-       <h1>Ride Share</h1>
-        <script src="" async defer></script>
+        <!-- HEADER -->
+        <header>
+            <div class="left_box">
+                <a href="index.html" target="_self"><h1 id="brand">Ride Share</h1></a>
+            </div>
+            <div class="right_box">
+                <a href="about.html" target="_self"><h3>About</h3></a>
+                <a href="help.html" target="_self"><h3>Help</h3></a>
+            </div>
+        </header>
+
+        <!-- section 1 -->
+        <div>
+            <div class="left_box">
+                <div class="slogan">
+                    <h2>Sign In</h2><br>
+                </div>
+                <form action="" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="pw">Password:</label>
+                    <input type="password" id="pw" name="pw" minlength="14" maxlength="18" required ><br>
+                   <input type="submit" value="Submit" class="green_button">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
