@@ -1,4 +1,10 @@
-/*** Element selctor ****/
+/*set default*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*** Element selector ****/
 h1 {
     color: #8FD14F;
     font-family: sans-serif, Tahoma, Verdana;
