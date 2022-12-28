@@ -57,6 +57,11 @@ table{
 }
 td{
     color: darkgreen;
+    padding: 15px;
+}
+
+thead {
+    color: black;
 }
 
 select{
