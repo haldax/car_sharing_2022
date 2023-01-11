@@ -22,7 +22,7 @@
         <!-- section 1 -->
         <section>
             <div class="left_box">
-                <img id="totoro" src="img/main1.jpg" alt="Flying Totoro">
+                <img id="totoro" src="img/main1.png" alt="Flying Totoro">
             </div>
             <div class="right_box">
                 <div class="slogan">
@@ -57,11 +57,65 @@
         </section>
 
         <!-- section 4 -->
-        <section>
 
+        <!-- MY CHANGES: added search destination part-->
+        <!-- added footer image (changed totoro to transparent bg)-->
+
+        <section>
+            <div class="journey">
+                <h2>Find my journey</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="left_box">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="start">Starting place:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="start" name="start" required>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="end">Destination:</label>
+                                </td>
+                            <td>
+                                <input type="text" id="end" name="end" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                                <td>
+                                    <label for="radius">Radius:</label>
+                                </td>
+                                <td>
+                                    <select id="radius" name="radius">
+                                        <option value="10km">10 km</option>                                        
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>  
+                        <tr>   
+                            <td>               
+                                <input type="submit" value="Search" class="green_button">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="right_box"> <!-- I copied the iframe link from google maps (using embed map) !! -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d632811.6328001475!2d4.35017807512801!3d51.716198064692755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47c6d91b5579c39f%3A0xf39ad2648164b998!2sEindhoven!3m2!1d51.423142299999995!2d5.4622896999999995!4m5!1s0x47c5b5c3515f58fd%3A0x89b05ca3c54bd43d!2sDelft!3m2!1d52.011576899999994!2d4.3570677!5e0!3m2!1snl!2snl!4v1673426917542!5m2!1snl!2snl" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
 
         <footer>
+            <img src="img/walking.png" class="footer_img">
         </footer>
     </body>
 </html>
