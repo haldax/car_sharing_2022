@@ -52,9 +52,7 @@
         </section>
 
         <!-- section 3 -->
-        <section>
-            <a href="routes.html" target="_self"><h3 class="green_button">Check Routes</h3></a>
-        </section>
+        
 
         <!-- section 4 -->
 
@@ -68,8 +66,8 @@
         </section>
 
         <section>
-            <div class="left_box">
-                <form action="" method="post">
+            <form action="" method="post">
+                <div class="left_box">
                     <table>
                         <tr>
                             <td>
@@ -82,7 +80,7 @@
                         <tr>
                             <td>
                                 <label for="end">Destination:</label>
-                                </td>
+                            </td>
                             <td>
                                 <input type="text" id="end" name="end" required>
                             </td>
@@ -100,18 +98,24 @@
                             </div>
                         </tr>  
                         <tr>   
-                            <td>               
-                                <input type="submit" value="Search" class="green_button">
+                            <td>      
+                                <a href="map.html" target="_self"><h3 class="green_button">Search</h3></a>  
+                                <!-- for now it's a link to new page instead of using the submit button -->       
+                                <!-- <input type="submit" value="Search" name="search" class="green_button"> -->
                             </td>
                         </tr>
                     </table>
-                </form>
-            </div>
-            <div class="right_box"> <!-- I copied the iframe link from google maps (using embed map) !! -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d632811.6328001475!2d4.35017807512801!3d51.716198064692755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47c6d91b5579c39f%3A0xf39ad2648164b998!2sEindhoven!3m2!1d51.423142299999995!2d5.4622896999999995!4m5!1s0x47c5b5c3515f58fd%3A0x89b05ca3c54bd43d!2sDelft!3m2!1d52.011576899999994!2d4.3570677!5e0!3m2!1snl!2snl!4v1673426917542!5m2!1snl!2snl" 
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+                </div>
+                <div class="right_box"> <!-- I copied the iframe link from google maps (using embed map) !! -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d157210.0808837705!2d4.223614703432523!3d51.99945182028481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1673430322186!5m2!1snl!2snl" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <a href="routes.html" target="_self"><h3 class="green_button">Check All Routes</h3></a>
         </section>
 
         <footer>
