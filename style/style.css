@@ -97,6 +97,10 @@ iframe{
     margin: auto;
 }
 
+input:invalid {
+    border: red solid 3px;
+}
+
 /*** Class selector ****/
 .container {
     width: 100%;

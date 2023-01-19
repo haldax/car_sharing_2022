@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <!-- HEADER -->
@@ -15,7 +15,7 @@
                 <div class="box">
                     <a href="index.html" target="_self"><h1 id="brand">TotoRide</h1></a>
                 </div>
-                <div class="box right">
+                <div class="box">
                     <nav>
                         <ul>
                             <li> <a href="about.html" target="_self">About</a></li>
@@ -31,21 +31,19 @@
             <div class="container">
                 <div class="box">
                     <div class="centering">
-                        <img id="totoro" src="img/main1.png" alt="Flying Totoro">
+                        <img id="totoro" src="resources/img/main1.png" alt="Flying Totoro">
                     </div>
                 </div>
                 <div class="box">
-                    <div class="left">
-                        <div class="centering">
-                            <div class="slogan">
-                                <h2>Share your journey</h2>
-                                <h2>Go Anywhere Anytime</h2><br>
-                                <p>Share a ride on the iconic network of toto riders!</p>
-                            </div>
-                            <div class="slogan">
-                                <a href="signup.html" target="_self"><h3 class="green_button">Join TotoRide</h3></a>
-                                <a href="signin.html" target="_self"><h3 class="green_button">Sign In</h3></a>
-                            </div>
+                    <div class="centering">
+                        <div class="slogan">
+                            <h2>Share your journey</h2>
+                            <h2>Go Anywhere Anytime</h2><br>
+                            <p>Share a ride on the iconic network of toto riders!</p>
+                        </div>
+                        <div class="slogan">
+                            <a href="form_validation/built-in_valid/signup.html" target="_self"><h3 class="green_button">Join TotoRide</h3></a>
+                            <a href="form_validation/built-in_valid/signin.html" target="_self"><h3 class="green_button">Sign In</h3></a>
                         </div>
                     </div>
                 </div>
@@ -55,10 +53,10 @@
             <div class="container">
                 <div class="box">
                     <div class="centering">
-                        <img class="pic_round" src="img/passenger.jpeg" alt="girl"><br>
+                        <img class="pic_round" src="resources/img/passenger.jpeg" alt="girl"><br>
                     </div>
                     <div class="centering">
-                        <a href="signin.html" target="_self"><h3 class="profile"><u>I am a passenger</u></h3></a><br>
+                        <a href="form_validation/built-in_valid/signin.html" target="_self"><h3 class="profile"><u>I am a passenger</u></h3></a><br>
                     </div>
                     <div class="centering">
                         <p>Request, save and update my rides</p>
@@ -66,8 +64,8 @@
                 </div>
                 <div class="box">
                     <div class="centering">
-                        <img class="pic_round" src="img/catbus.jpg" alt="cat bus"><br>
-                        <a href="signin.html" target="_self"><h3 class="profile"><u>I am a driver</u></h3></a><br>
+                        <img class="pic_round" src="resources/img/catbus.jpg" alt="cat bus"><br>
+                        <a href="form_validation/built-in_valid/signin.html" target="_self"><h3 class="profile"><u>I am a driver</u></h3></a><br>
                         <p>Manage my rides</p>
                     </div>
                 </div>
@@ -106,7 +104,7 @@
                                         <label for="radius">Radius:</label>
                                     </td>
                                     <td>
-                                        <select id="radius" name="radius">
+                                        <select id="radius" name="radius" required>
                                             <option value="10km">1 km</option>
                                             <option value="10km">2 km</option>
                                             <option value="10km">5 km</option>
@@ -138,7 +136,7 @@
 
         <footer>
             <div class="footer_img">
-                <img src="img/walking.png" class="footer_img" alt="three totoros">
+                <img src="resources/img/walking.png" class="footer_img" alt="three totoros">
             </div>
         </footer>
     
