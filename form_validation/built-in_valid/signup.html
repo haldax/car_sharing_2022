@@ -34,6 +34,7 @@
                 </div>
                 <form action="" method="post">
                     <table>
+                        <!-- Username -->
                         <tr>
                             <td>
                                 <label for="user">Username:</label>
@@ -42,7 +43,7 @@
                                 <input type="text" id="user" name="user" required minlength="5" maxlength="12" placeholder="5 to 12 characters">
                             </td>
                         </tr>
-
+                        <!-- Email -->
                         <tr>
                             <td>
                                 <label for="email">Email:</label>
@@ -51,7 +52,7 @@
                                 <input type="email" id="email" name="email" required placeholder="abc@xx.com">
                             </td>
                         </tr>
-
+                        <!-- Password -->
                         <tr>
                             <td>
                                 <label for="pw">Password:</label>
@@ -60,16 +61,24 @@
                                 <input type="password" id="pw" name="pw" minlength="12" required placeholder="minimum 12 characters">
                             </td>
                         </tr>
-
+                        <!-- Name -->
                         <tr>
                             <td>
-                                <label for="name">Full name:</label>
+                                <label for="fname">First name:</label>
                             </td>
                             <td>
-                                <input type="text" id="name" name="name" required pattern="[A-Za-z ]+" placeholder="only letters">
+                                <input type="text" id="fname" name="fname" required pattern="[A-Za-z]+" placeholder="alphabet only">
                             </td>
                         </tr>
-
+                        <tr>
+                            <td>
+                                <label for="lname">Last name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="lname" name="lname" required pattern="[A-Za-z]+" placeholder="alphabet only">
+                            </td>
+                        </tr>
+                        <!-- address -->
                         <tr>
                             <td>
                                 <label for="address">Address:</label>
@@ -78,7 +87,7 @@
                                 <input type="text" id="address" name="address" placeholder="optional">
                             </td>
                         </tr>
-
+                        <!-- country -->
                         <tr>
                             <td>
                                 <label for="country">Country:</label>
@@ -87,16 +96,16 @@
                                 <input type="text" id="country" name="country" required pattern="[A-Za-z]+" placeholder="Netherlands">
                             </td>
                         </tr>
-
+                        <!-- zipcode -->
                         <tr>
                             <td>
                                 <label for="zipcode">Zip code:</label>
                             </td>
                             <td>
-                                <input type="text" id="zipcode" name="zipcode" pattern="[A-Z0-9]{6}" placeholder="ABCD34" required>
+                                <input type="text" id="zipcode" name="zipcode" minlength="6" maxlength="6" placeholder="1234AB" required>
                             </td>
                         </tr>
-
+                        <!-- sex -->
                         <tr>
                             <td>
                                 <label for="sex">Sex:</label>
@@ -108,7 +117,7 @@
                                 </select>
                             </td>
                         </tr>
-
+                        <!-- language -->
                         <tr>
                             <td>
                                 <label for="language">Language:</label>
@@ -120,13 +129,13 @@
                                 </select>
                             </td>
                         </tr>
-
+                        <!-- about/intro -->
                         <tr>
                             <td>
                                 <label for="about">Short bio:</label>
                             </td>
                             <td>
-                                <textarea id="about" maxlength="250" rows="5" cols="30">Say something about yourself..</textarea>
+                                <textarea id="about" maxlength="250" rows="5" cols="30">(Optional)Say something about yourself..</textarea>
                             </td>
                         </tr>
                     </table>

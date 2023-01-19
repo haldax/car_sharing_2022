@@ -98,7 +98,7 @@ iframe{
 }
 
 input:invalid {
-    border: red solid 3px;
+    border: red solid 1px;
 }
 
 /*** Class selector ****/
