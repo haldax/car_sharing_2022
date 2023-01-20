@@ -15,8 +15,8 @@ const email = document.getElementById("email");
 const sex = document.getElementById("sex");
 const language = document.getElementById("language");
 
-// validation
-form.addEventListener('submit', function (e) {
+// validation handler
+const handler = (e) => {
     // prevent form from submitting before validation
     e.preventDefault();
 
@@ -35,4 +35,6 @@ form.addEventListener('submit', function (e) {
         && okCountry && okZip && okEmail && okSex && okLangugae) {
         // send the form to server DB
     }
-})
+}
+// let submit click trigger event handler
+form.addEventListener('submit', handler);

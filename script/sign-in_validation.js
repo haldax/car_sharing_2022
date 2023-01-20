@@ -6,8 +6,8 @@ const form = document.getElementById("form-signin");
 const pw = document.getElementById("pw");
 const email = document.getElementById("email");
 
-// validation
-form.addEventListener('submit', function (e) {
+// validation handler
+const handler = (e) => {
     // prevent form from submitting before validation
     e.preventDefault();
 
@@ -16,4 +16,7 @@ form.addEventListener('submit', function (e) {
     if (okPw && okEmail) {
         // send the form to server DB
     }
-})
+}
+
+// set listener to trigger validation
+form.addEventListener('submit', handler);
