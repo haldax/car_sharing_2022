@@ -40,7 +40,8 @@
                                 <label for="user">Username:</label>
                             </td>
                             <td>
-                                <input type="text" id="user" name="user" required placeholder="5 to 12 characters" pattern="^[A-Z][A-Za-z0-9]{3,10}[\d\\#?!@$%^&*-]$">
+                                <input type="text" id="user" name="user" required placeholder="5 to 12 characters"
+                                       pattern="^[A-Z][A-Za-z0-9]{3,10}[\d\\#?!@$%^&*-]$">
                             </td>
                         </tr>
                         <!-- Email -->
@@ -49,7 +50,8 @@
                                 <label for="email">Email:</label>
                             </td>
                             <td>
-                                <input type="email" id="email" name="email" required placeholder="abc@xx.com">
+                                <input type="text" id="email" name="email" required placeholder="abc@xyz.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[A-Za-z]{2,}$">
                             </td>
                         </tr>
                         <!-- Password -->
@@ -94,7 +96,7 @@
                                 <label for="country">Country:</label>
                             </td>
                             <td>
-                                <input type="text" id="country" name="country" required pattern="[A-Za-z]+" placeholder="Netherlands">
+                                <input type="text" id="country" name="country" required placeholder="Netherlands">
                             </td>
                         </tr>
                         <!-- zipcode -->
@@ -136,7 +138,7 @@
                                 <label for="about">Short bio:</label>
                             </td>
                             <td>
-                                <textarea id="about" maxlength="250" rows="5" cols="30">(Optional)Say something about yourself..</textarea>
+                                <textarea id="about" rows="5" cols="30">(Optional) Say something about yourself..</textarea>
                             </td>
                         </tr>
                     </table>

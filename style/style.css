@@ -188,7 +188,7 @@ input:invalid {
     border: green solid 1px;
 }
 
-.form-field small {
+.reminder {
     color: red;
     font-size: small;
 }
