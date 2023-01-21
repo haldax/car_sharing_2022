@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../style/style.css">
+        <script type="text/javascript" src="../../script/tracking.js"></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -26,13 +27,22 @@
             </div>
         </header>
 
+        <!-- hidden div with tracking stats -->
+        <div id="hidden_div" style="display: none;" class="box">
+            <p id="track_clicks">Number of mouse clicks: 0</p>
+            <p id="check2">Total time spent: 0 hours, 0 minutes and 0 seconds</p>
+            <p id="check3">Total key presses: 0</p>
+            <p id="check4">Total number of characters typed: 0</p>
+            <hr>
+        </div>
+
         <!-- section 1 -->
         <div class="container">
             <div class="box">
                 <div class="slogan">
                     <h2>Sign Up</h2><br>
                 </div>
-                <form class="form" id="signup">
+                <form class="form" id="signup" onsubmit="showDiv()">
                     <table>
                         <!-- Username -->
                         <tr>
