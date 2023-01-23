@@ -204,6 +204,13 @@ input:invalid {
     align-items: baseline;
 }
 
+.info_table{
+    border-style: solid;
+    border-color: #8FD14F;
+    border-width: 2px;
+    background-color: whitesmoke;
+}
+
 /*** ID selector ****/
 #totoro{
     display: block;
