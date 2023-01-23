@@ -28,11 +28,11 @@
         </header>
 
         <!-- hidden div with tracking stats -->
-        <div id="hidden_div" style="display: none;" class="box">
-            <p id="track_clicks">Number of mouse clicks: 0</p>
-            <p id="track_time">Total time spent: 0 hours, 0 minutes and 0 seconds</p>
-            <p id="check3">Total key presses: 0</p>
-            <p id="check4">Total number of characters typed: 0</p>
+        <div id="hidden-div" style="display: none;" class="box">
+            <p id="track-clicks">Number of mouse clicks: 0</p>
+            <p id="track-time">Total time spent: 0 hours, 0 minutes and 0 seconds</p>
+            <p id="track-total-keys">Total key presses: 0</p>
+            <p id="track-total-chars">Total number of characters typed: 0</p>
             <hr>
         </div>
 
@@ -42,7 +42,7 @@
                 <div class="slogan">
                     <h2>Sign Up</h2><br>
                 </div>
-                <form class="form" id="signup" onsubmit="showDiv()">
+                <form class="form" id="signup" onsubmit="showDiv(event)">
                     <table>
                         <!-- Username -->
                         <tr>
