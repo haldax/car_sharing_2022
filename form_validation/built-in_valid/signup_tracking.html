@@ -7,27 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../style/style.css">
-        <script type="text/javascript">
-            function showInfo() {
-                const address = document.getElementById("address");
-                const bio = document.getElementById("about");
-
-                const info = 'Submitted: \n\n'
-                    + '\nUsername: ' + document.getElementById("user").value
-                    +'\nEmail: ' + document.getElementById("email").value
-                    +'\nPassword: ' + document.getElementById("pw").value
-                    +'\nFirst Name: ' + document.getElementById("fname").value
-                    +'\nLast Name: ' + document.getElementById("lname").value
-                    +'\nZipcode : ' + document.getElementById("zipcode").value
-                    +'\nCountry : ' + document.getElementById("country").value
-                    +'\nAddress : ' + (address.value === address.placeholder ? ' ' :address.value)
-                    +'\nSex : ' + document.getElementById("sex").value
-                    +'\nLanguage : ' + document.getElementById("language").value
-                    +'\nIntro : ' + (bio.value === bio.placeholder ? ' ' : bio.value);
-                window.alert(info);
-                return true;
-            }
-        </script>
     </head>
     <body>
         <!-- HEADER -->
@@ -53,7 +32,7 @@
                 <div class="slogan">
                     <h2>Sign Up</h2><br>
                 </div>
-                <form class="form" id="signup" onsubmit="event.preventDefault(); return showInfo();">
+                <form class="form" id="signup">
                     <table>
                         <!-- Username -->
                         <tr>

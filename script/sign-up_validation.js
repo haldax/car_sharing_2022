@@ -43,6 +43,7 @@ const handler = (e) => {
                     +'\nFirst Name: ' + fname.value
                     +'\nLast Name: ' + lname.value
                     +'\nZipcode : ' + zip.value
+                    +'\nCountry : ' + country.value
                     +'\nAddress : ' + (address.value === address.placeholder ? ' ' :address.value)
                     +'\nSex : ' + sex.value
                     +'\nLanguage : ' + language.value
