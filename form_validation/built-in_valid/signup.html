@@ -29,16 +29,111 @@
 
         <!-- hidden div with tracking stats -->
         <div id="hidden-div" style="display: none;" class="info_box">
+            <h2>Behavioral data</h2>
             <p id="track-clicks">Number of mouse clicks: 0</p>
             <p id="track-time">Total time spent: 0 hours, 0 minutes and 0 seconds</p>
             <p id="track-total-keys">Total key presses: 0</p>
             <p id="track-total-chars">Total number of characters typed: 0</p>
             <br>
-            <p>See number of key presses and typed characters per field: <button onclick="showFields()">Click here</button></p>
+            <p>View/hide number of key presses and typed characters per field: <button onclick="showFields()">Click here</button></p>
         </div>
 
         <!-- hidden div for table with key presses/character amount per field -->
         <div id="hidden-div-fields" style="display: none;" class="info_box">
+            <table class="info_table" rules="all">
+                <thead>
+                    <tr>
+                        <th>
+                            Field
+                        </th>
+                        <th>
+                            Key presses
+                        </th>
+                        <th>
+                            Characters typed
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Userame
+                        </td>
+                        <td id="userK"></td>
+                        <td id="userC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td id="emailK"></td>
+                        <td id="emailC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td id="pwK"></td>
+                        <td id="pwC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            First name
+                        </td>
+                        <td id="fnameK"></td>
+                        <td id="fnameC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last name
+                        </td>
+                        <td id="lnameK"></td>
+                        <td id="lnameC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address
+                        </td>
+                        <td id="addressK"></td>
+                        <td id="addressC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Country
+                        </td>
+                        <td id="countryK"></td>
+                        <td id="countryC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Zip code
+                        </td>
+                        <td id="zipcodeK"></td>
+                        <td id="zipcodeC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sex
+                        </td>
+                        <td id="sexK"></td>
+                        <td id="sexC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Language
+                        </td>
+                        <td id="languageK"></td>
+                        <td id="languageC"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bio
+                        </td>
+                        <td id="aboutK"></td>
+                        <td id="aboutC"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- section 1 -->
@@ -55,7 +150,7 @@
                                 <label for="user">Username:</label>
                             </td>
                             <td>
-                                <input type="text" id="user" name="user" required minlength="5" maxlength="12" placeholder="5 to 12 characters">
+                                <input type="text" id="user" name="user" required minlength="5" maxlength="12" placeholder="5 to 12 characters" oninput="addKey('user')">
                             </td>
                         </tr>
                         <!-- Email -->
@@ -64,7 +159,7 @@
                                 <label for="email">Email:</label>
                             </td>
                             <td>
-                                <input type="email" id="email" name="email" required placeholder="abc@xyz.com">
+                                <input type="email" id="email" name="email" required placeholder="abc@xyz.com" oninput="addKey('email')">
                             </td>
                         </tr>
                         <!-- Password -->
@@ -73,7 +168,7 @@
                                 <label for="pw">Password:</label>
                             </td>
                             <td>
-                                <input type="password" id="pw" name="pw" minlength="12" required placeholder="minimum 12 characters">
+                                <input type="password" id="pw" name="pw" minlength="12" required placeholder="minimum 12 characters" oninput="addKey('pw')">
                             </td>
                         </tr>
                         <!-- Name -->
@@ -82,7 +177,7 @@
                                 <label for="fname">First name:</label>
                             </td>
                             <td>
-                                <input type="text" id="fname" name="fname" required placeholder="alphabet only">
+                                <input type="text" id="fname" name="fname" required placeholder="alphabet only" oninput="addKey('fname')">
                             </td>
                         </tr>
                         <tr>
@@ -90,7 +185,7 @@
                                 <label for="lname">Last name:</label>
                             </td>
                             <td>
-                                <input type="text" id="lname" name="lname" required placeholder="alphabet only">
+                                <input type="text" id="lname" name="lname" required placeholder="alphabet only" oninput="addKey('lname')">
                             </td>
                         </tr>
                         <!-- address -->
@@ -99,7 +194,7 @@
                                 <label for="address">Address:</label>
                             </td>
                             <td>
-                                <input type="text" id="address" name="address" placeholder="optional">
+                                <input type="text" id="address" name="address" placeholder="optional" oninput="addKey('address')">
                             </td>
                         </tr>
                         <!-- country -->
@@ -108,7 +203,7 @@
                                 <label for="country">Country:</label>
                             </td>
                             <td>
-                                <input type="text" id="country" name="country" required placeholder="Netherlands">
+                                <input type="text" id="country" name="country" required placeholder="Netherlands" oninput="addKey('country')">
                             </td>
                         </tr>
                         <!-- zipcode -->
@@ -117,7 +212,7 @@
                                 <label for="zipcode">Zip code:</label>
                             </td>
                             <td>
-                                <input type="text" id="zipcode" name="zipcode" minlength="6" maxlength="6" placeholder="1234AB" required>
+                                <input type="text" id="zipcode" name="zipcode" minlength="6" maxlength="6" placeholder="1234AB" required oninput="addKey('zipcode')">
                             </td>
                         </tr>
                         <!-- sex -->
@@ -126,7 +221,7 @@
                                 <label for="sex">Sex:</label>
                             </td>
                             <td>
-                                <select id="sex" name="sex" required>
+                                <select id="sex" name="sex" required onselect="addKey('sex')">
                                     <option value="female">Female</option>
                                     <option value="male">Male</option>
                                 </select>
@@ -138,7 +233,7 @@
                                 <label for="language">Language:</label>
                             </td>
                             <td>
-                                <select id="language" name="language" required>
+                                <select id="language" name="language" required onselect="addKey('language')">
                                     <option value="english">English</option>
                                     <option value="dutch">Dutch</option>
                                 </select>
@@ -150,7 +245,7 @@
                                 <label for="about">Short bio:</label>
                             </td>
                             <td>
-                                <textarea id="about" maxlength="250" rows="5" cols="30">(Optional)Say something about yourself..</textarea>
+                                <textarea id="about" maxlength="250" rows="5" cols="30" oninput="addKey('about')">(Optional)Say something about yourself..</textarea>
                             </td>
                         </tr>
                     </table>
