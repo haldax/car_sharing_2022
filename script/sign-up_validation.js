@@ -14,6 +14,8 @@ const zip = document.getElementById("zipcode");
 const email = document.getElementById("email");
 const sex = document.getElementById("sex");
 const language = document.getElementById("language");
+const address = document.getElementById("address");
+const bio = document.getElementById("about");
 
 // validation handler
 const handler = (e) => {
@@ -33,7 +35,19 @@ const handler = (e) => {
 
     if (okUsername && okPw && okFname && okLname
         && okCountry && okZip && okEmail && okSex && okLangugae) {
-        // send the form to server DB
+        // alert
+        const info = 'Submitted: \n\n'
+                    + '\nUsername: ' + username.value
+                    +'\nEmail: ' + email.value
+                    +'\nPassword: ' + pw.value
+                    +'\nFirst Name: ' + fname.value
+                    +'\nLast Name: ' + lname.value
+                    +'\nZipcode : ' + zip.value
+                    +'\nAddress : ' + (address.value === address.placeholder ? ' ' :address.value)
+                    +'\nSex : ' + sex.value
+                    +'\nLanguage : ' + language.value
+                    +'\nIntro : ' + (bio.value === bio.placeholder ? ' ' : bio.value);
+        window.alert(info);
     }
 }
 // let submit click trigger event handler

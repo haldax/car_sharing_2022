@@ -120,7 +120,10 @@ const checkZip = (zip) => {
     if (!required(value)) {
         promptError(zip, "Please fill in zip code.");
         return false;
-    } else if (!validPattern(pat_zip, value)) {
+    } else if(validLength(6,6,zip.length)) {
+        promptError(zip, "Please fill in zip code in 4 digits and 2 characters.");
+        return false;
+    }else if (!validPattern(pat_zip, value)) {
         promptError(zip, "Zip code must contain 4 numbers and 2 letters.");
         return false;
     } else {
