@@ -48,6 +48,7 @@ function totalTime(){
         totalMinutes + " minutes and " + totalSeconds + " seconds";
 }
 
+//count total characters typed
 function totalCharacters(){
     var user = document.getElementById("user").value.length;
     var email = document.getElementById("email").value.length;
@@ -58,6 +59,8 @@ function totalCharacters(){
     var country = document.getElementById("country").value.length;
     var zipcode = document.getElementById("zipcode").value.length;
     var about = document.getElementById("about").value;
+
+    //exclude the text in the optional box if nothing has been written by the user
     if (about.includes("(Optional)Say something about yourself..")){
         about = 0;
     } else{
@@ -74,4 +77,9 @@ function showDiv(e){
     totalTime();
     totalCharacters();
     document.getElementById("hidden-div").style.display="block";
+}
+
+//make the hidden div with the table visible
+function showFields(){
+    document.getElementById("hidden-div-fields").style.display = "block";
 }
