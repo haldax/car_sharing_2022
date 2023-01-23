@@ -28,12 +28,17 @@
         </header>
 
         <!-- hidden div with tracking stats -->
-        <div id="hidden-div" style="display: none;" class="box">
+        <div id="hidden-div" style="display: none;" class="info_box">
             <p id="track-clicks">Number of mouse clicks: 0</p>
             <p id="track-time">Total time spent: 0 hours, 0 minutes and 0 seconds</p>
             <p id="track-total-keys">Total key presses: 0</p>
             <p id="track-total-chars">Total number of characters typed: 0</p>
-            <hr>
+            <br>
+            <p>See number of key presses and typed characters per field: <button onclick="showFields()">Click here</button></p>
+        </div>
+
+        <!-- hidden div for table with key presses/character amount per field -->
+        <div id="hidden-div-fields" style="display: none;" class="info_box">
         </div>
 
         <!-- section 1 -->
