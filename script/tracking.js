@@ -1,33 +1,33 @@
-var clicks = 0;
-var totalKeys = 0;
-var startMs;
-var totalHours = 0;
-var totalMinutes = 0;
-var totalSeconds = 0;
+let clicks = 0;
+let totalKeys = 0;
+let startMs;
+let totalHours = 0;
+let totalMinutes = 0;
+let totalSeconds = 0;
 
-var buttonClicks = 0;
-var userK = 0;
-var userC = 0;
-var emailK = 0;
-var emailC = 0;
-var pwK = 0;
-var pwC = 0;
-var fnameK = 0;
-var fnameC = 0;
-var lnameK = 0;
-var lnameC = 0;
-var addressK = 0;
-var addressC = 0;
-var countryK = 0;
-var countryC = 0;
-var zipcodeK = 0;
-var zipcodeC = 0;
-var sexK = 0;
-var sexC = 0;
-var languageK = 0;
-var languageC = 0;
-var aboutK = 0;
-var aboutC = 0;
+let buttonClicks = 0;
+let userK = 0;
+let userC = 0;
+let emailK = 0;
+let emailC = 0;
+let pwK = 0;
+let pwC = 0;
+let fnameK = 0;
+let fnameC = 0;
+let lnameK = 0;
+let lnameC = 0;
+let addressK = 0;
+let addressC = 0;
+let countryK = 0;
+let countryC = 0;
+let zipcodeK = 0;
+let zipcodeC = 0;
+let sexK = 0;
+let sexC = 0;
+let languageK = 0;
+let languageC = 0;
+let aboutK = 0;
+let aboutC = 0;
 
 //track the mouse clicks
 document.onclick = function(){
@@ -48,11 +48,11 @@ window.onload = function(){
 }
 
 function totalTime(){
-    var endMs = Date.now();
+    let endMs = Date.now();
 
     //calculate the total time in hours/minutes/seconds
-    var totalMs = endMs - startMs;
-    var fullSeconds = Math.floor(totalMs / 1000);
+    let totalMs = endMs - startMs;
+    let fullSeconds = Math.floor(totalMs / 1000);
 
     if(fullSeconds < 60){
         totalSeconds = fullSeconds;
@@ -83,7 +83,7 @@ function totalCharacters(){
     addressC = document.getElementById("address").value.length;
     countryC = document.getElementById("country").value.length;
     zipcodeC = document.getElementById("zipcode").value.length;
-    var about = document.getElementById("about").value;
+    let about = document.getElementById("about").value;
 
     //exclude the text in the optional box if nothing has been written by the user
     if (about.includes("(Optional)Say something about yourself..")){
@@ -92,7 +92,7 @@ function totalCharacters(){
         aboutC = about.length;
     }
 
-    var totalChar = userC + emailC + pwC + fnameC + lnameC + addressC + countryC + zipcodeC + aboutC;
+    let totalChar = userC + emailC + pwC + fnameC + lnameC + addressC + countryC + zipcodeC + aboutC;
     document.getElementById("track-total-chars").innerHTML = "Total number of characters typed: " + totalChar;
 }
 
