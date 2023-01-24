@@ -193,6 +193,24 @@ input:invalid {
     font-size: small;
 }
 
+.info_box{
+    background-color:rgb(190, 236, 173);
+    border-style: solid;
+    border-color:lightgoldenrodyellow;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: baseline;
+}
+
+.info_table{
+    border-style: solid;
+    border-color: #8FD14F;
+    border-width: 2px;
+    background-color: whitesmoke;
+}
+
 /*** ID selector ****/
 #totoro{
     display: block;
