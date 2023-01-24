@@ -47,6 +47,9 @@ window.onload = function(){
     startMs = Date.now();           //start time in milliseconds
 }
 
+//don't stop counting the time
+setInterval(totalTime, 1000);
+
 function totalTime(){
     let endMs = Date.now();
 
@@ -140,7 +143,6 @@ function addKey(id){
 //make the hidden div visible
 function showDiv(e){
     e.preventDefault();
-    totalTime();
     document.getElementById("hidden-div").style.display="block";
 }
 
