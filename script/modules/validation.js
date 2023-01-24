@@ -1,8 +1,8 @@
 // regex
 const pat_username = /^[A-Z][A-Za-z0-9]{3,10}[\d\\#?!@$%^&*-]$/;
 const pat_pw = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{12,}$/;
-const pat_name = /[A-Za-z]+/;
-const pat_zip = /\d{4}[/a-zA-Z]{2}/;
+const pat_name = /^[/A-Za-z]+$/;
+const pat_zip = /^\d{4}[/a-zA-Z]{2}$/;
 const pat_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 // basic functions
@@ -46,7 +46,7 @@ const checkUsername = (username) => {
         promptError(username, "Username must be between 5 and 12 characters.");
         return false;
     } else if (!validPattern(pat_username, value)) {
-        promptError(username, "Username must start with a capital letter and end with a number of special character");
+        promptError(username, "Username must start with a capital letter and end with a number or a special character");
         return false;
     } else {
         promptSuccess(username);
