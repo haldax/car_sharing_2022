@@ -32,13 +32,11 @@ var aboutC = 0;
 //track the mouse clicks
 document.onclick = function(){
     clicks++;
-    document.getElementById("track-clicks").innerHTML="Number of mouse clicks: " + clicks;
 }
 
 //track total key presses
 document.onkeyup = function(){
     totalKeys++;
-    document.getElementById("track-total-keys").innerHTML = "Total key presses: " + totalKeys;
 }
 
 //set the time of opening the page
@@ -139,7 +137,9 @@ function addKey(id){
 //make the hidden div visible
 function showDiv(e){
     e.preventDefault();
+    document.getElementById("track-clicks").innerHTML="Number of mouse clicks: " + clicks;
     totalTime();
+    document.getElementById("track-total-keys").innerHTML = "Total key presses: " + totalKeys;
     totalCharacters();
     document.getElementById("hidden-div").style.display="block";
 }
